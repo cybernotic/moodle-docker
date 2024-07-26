@@ -18,7 +18,8 @@ then
     until $basedir/bin/moodle-docker-compose logs db | grep -q 'DATABASE IS READY TO USE!';
     do
         echo 'Waiting for oracle to come up...'
-        sleep 15
+        sleep 25
+        docker ps | tee inf
     done
 else
     waiting for mysql....

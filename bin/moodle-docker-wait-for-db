@@ -21,5 +21,7 @@ then
         sleep 15
     done
 else
-    sleep 10
+    waiting for mysql....
+    sleep 20
+    docker ps | tee inf
 fi
